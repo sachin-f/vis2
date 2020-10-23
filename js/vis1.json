@@ -3,7 +3,7 @@
     "width": 800,
     "height": 500,
     "projection": {
-      "type": "azimuthalEquidistant"
+      "type": "mercator"
     },
     "layer": [
       {
