@@ -8,7 +8,7 @@
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.states.json",
+          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.states.json",
           "format": {
             "type": "topojson",
             "feature": "aus"
