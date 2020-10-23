@@ -1,0 +1,115 @@
+name,latitude_deg,longitude_deg,iata_code
+Albany Airport,-34.94329834,117.8089981,ALH
+Armidale Airport,-30.52809906,151.6170044,ARM
+Ayers Rock Connellan Airport,-25.1861,130.975998,AYQ
+Barcaldine Airport,-23.56529999,145.3070068,BCI
+Alice Springs Airport,-23.80669975,133.9019928,ASP
+Brisbane International Airport,-27.38419914,153.1170044,BNE
+Gold Coast Airport,-28.1644001,153.5050049,OOL
+Blackall Airport,-24.42779922,145.4290009,BKQ
+Cairns International Airport,-16.88579941,145.7550049,CNS
+Charleville Airport,-26.41329956,146.2619934,CTL
+Birdsville Airport,-25.89749908,139.3480072,BVI
+Broken Hill Airport,-32.00139999,141.4720001,BHQ
+Hamilton Island Airport,-20.35810089,148.9519959,HTI
+Bedourie Airport,-24.34609985,139.4600067,BEU
+Bourke Airport,-30.03919983,145.9519958,BRK
+Mount Isa Airport,-20.66390038,139.4889984,ISA
+Sunshine Coast Airport,-26.6033,153.091003,MCY
+Mackay Airport,-21.17169952,149.1799927,MKY
+Ballina Byron Gateway Airport,-28.83390045,153.5619965,BNK
+Oakey Airport,-27.41139984,151.7350006,OKY
+Boulia Airport,-22.91329956,139.8999939,BQL
+Proserpine Whitsunday Coast Airport,-20.49500084,148.552002,PPP
+Rockhampton Airport,-23.38190079,150.4750061,ROK
+Broome International Airport,-17.94470024,122.2320023,BME
+Bathurst Airport,-33.40940094,149.6519928,BHS
+Townsville Airport,-19.25250053,146.7649994,TSV
+Blackwater Airport,-23.60309982,148.8070068,BLT
+Bundaberg Airport,-24.90390015,152.3190002,BDB
+Weipa Airport,-12.67860031,141.9250031,WEI
+Carnarvon Airport,-24.880211,113.67174,CVQ
+Cobar Airport,-31.53829956,145.7940063,CAZ
+Coober Pedy Airport,-29.04000092,134.720993,CPD
+Cloncurry Airport,-20.66860008,140.5039978,CNJ
+Ceduna Airport,-32.13059998,133.7100067,CED
+Cooktown Airport,-15.44470024,145.1840057,CTN
+Cunnamulla Airport,-28.03000069,145.621994,CMA
+Coonamble Airport,-30.98329926,148.3760071,CNB
+Coen Airport,-13.761133,143.113311,CUQ
+Cooma Snowy Mountains Airport,-36.30059814,148.973999,OOM
+Devonport Airport,-41.16970062,146.4299927,DPO
+Elcho Island Airport,-12.01939964,135.5709991,ELC
+Emerald Airport,-23.56749916,148.1790009,EMD
+Esperance Airport,-33.684399,121.822998,EPR
+Geraldton Airport,-28.796101,114.707001,GET
+Gladstone Airport,-23.869699,151.223007,GLT
+Groote Eylandt Airport,-13.97500038,136.4600067,GTE
+Griffith Airport,-34.25080109,146.0670013,GFF
+Hervey Bay Airport,-25.31889915,152.8800049,HVB
+Horn Island Airport,-10.58640003,142.2899933,HID
+Mount Hotham Airport,-37.04750061,147.3339996,MHU
+King Island Airport,-39.87749863,143.878006,KNS
+Kowanyama Airport,-15.48560047,141.7510071,KWM
+Kingscote Airport,-35.71390152,137.5209961,KGC
+Leonora Airport,-28.87809944,121.3150024,LNO
+Lockhart River Airport,-12.7869,143.304993,IRG
+Lismore Airport,-28.83029938,153.2599945,LSY
+Lightning Ridge Airport,-29.45669937,147.9839935,LHG
+Longreach Airport,-23.43420029,144.2799988,LRE
+Leinster Airport,-27.84329987,120.7030029,LER
+Avalon Airport,-38.039398,144.468994,AVV
+Albury Airport,-36.06779861,146.9579926,ABX
+Meekatharra Airport,-26.61170006,118.5479965,MKR
+Melbourne Essendon Airport,-37.7281,144.901993,MEB
+Merimbula Airport,-36.90859985,149.901001,MIM
+Maningrida Airport,-12.05609989,134.2339935,MNG
+Mildura Airport,-34.22919846,142.0859985,MQL
+Launceston Airport,-41.54529953,147.2140045,LST
+Melbourne Moorabbin Airport,-37.97579956,145.102005,MBW
+Melbourne International Airport,-37.673302,144.843002,MEL
+Mount Magnet Airport,-28.11610031,117.8420029,MMG
+Moree Airport,-29.49889946,149.8450012,MRZ
+Moranbah Airport,-22.05780029,148.0769959,MOV
+Moruya Airport,-35.89780045,150.1439972,MYA
+Mount Gambier Airport,-37.74560165,140.7850037,MGB
+Narrandera Airport,-34.70220184,146.5119934,NRA
+Narrabri Airport,-30.31920052,149.8269959,NAA
+Normanton Airport,-17.68409,141.069664,NTN
+Newman Airport,-23.4178009,119.8030014,ZNE
+Adelaide International Airport,-34.945,138.531006,ADL
+Port Augusta Airport,-32.50690079,137.7169952,PUG
+Paraburdoo Airport,-23.17110062,117.7450027,PBO
+Darwin International Airport,-12.41469955,130.8769989,DRW
+Gove Airport,-12.26939964,136.8179932,GOV
+Karratha Airport,-20.71220016,116.7730026,KTA
+Kalgoorlie Boulder Airport,-30.7894001,121.461998,KGI
+Parkes Airport,-33.13140106,148.2389984,PKE
+Kununurra Airport,-15.77810001,128.7079926,KNX
+Port Lincoln Airport,-34.6053009,135.8800049,PLO
+Learmonth Airport,-22.23559952,114.0889969,LEA
+Port Macquarie Airport,-31.43580055,152.8630066,PQQ
+Portland Airport,-38.31809998,141.470993,PTJ
+Port Hedland International Airport,-20.37779999,118.6259995,PHE
+Perth International Airport,-31.94029999,115.9670029,PER
+Quilpie Airport,-26.61219978,144.253006,ULP
+Roma Airport,-26.54500008,148.7749939,RMA
+Canberra International Airport,-35.30690002,149.1950073,CBR
+Coffs Harbour Airport,-30.320601,153.115997,CFS
+Dubbo City Regional Airport,-32.21670151,148.5749969,DBO
+Shark Bay Airport,-25.89389992,113.5770035,MJK
+Sydney Kingsford Smith International Airport,-33.94609833,151.177002,SYD
+Tamworth Airport,-31.08390045,150.8470001,TMW
+Wagga Wagga City Airport,-35.16529846,147.4660034,WGA
+Thargomindah Airport,-27.9864006,143.8110046,XTG
+Thangool Airport,-24.4939003,150.576004,THG
+Tennant Creek Airport,-19.63439941,134.1829987,TCA
+Taree Airport,-31.8885994,152.5140076,TRO
+Windorah Airport,-25.41309929,142.6670074,WNR
+Whyalla Airport,-33.05889893,137.5140076,WYA
+Newcastle Airport,-32.79499817,151.8339996,NTL
+Wiluna Airport,-26.62919998,120.2210007,WUN
+Shellharbour Airport,-34.5611,150.789001,WOL
+Winton Airport,-22.36359978,143.0859985,WIN
+Wynyard Airport,-40.99890137,145.7310028,BWT
+Toowoomba Wellcamp Airport,-27.558332,151.793335,WTB
