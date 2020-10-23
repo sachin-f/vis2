@@ -13,7 +13,7 @@
       },
       {
         "name": "source_1",
-        "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/aus_air.csv",
+        "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv",
         "format": {"type": "csv", "delimiter": ","},
         "transform": [
           {
