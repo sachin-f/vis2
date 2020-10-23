@@ -8,10 +8,10 @@
     "layer": [
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.states.json",
+          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus_airports.json",
           "format": {
             "type": "topojson",
-            "feature": "aus"
+            "feature": "World_Airports"
           }
         },
         "mark": {
