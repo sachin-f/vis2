@@ -1,81 +1,172 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
-    "background": "white",
-    "padding": 5,
-    "width": 800,
-    "height": 600,
-    "style": "cell",
-    "data": [
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 560,
+  "height": 560,
+"padding": {"top": 25, "left": 0, "right": 0, "bottom": 0},
+  "signals": [
+    {
+    "name": "hover",
+    "value": null,
+    "on": [
+      {"events": "symbol:mouseover", "update": "datum"},
+      {"events": "symbol:mouseout", "update": "null"}
+    ]
+  },
+  {
+    "name": "title",
+    "value": "Australian Airports",
+    "update": "hover ? hover.name + ' (' + hover.iata_code + ')' : 'Australian Airports'"
+  }
+  ],
+  "data": [
+    {
+      "name": "states",
+      "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.topojson_states.json",
+      "format": {"type": "topojson", "feature": "Australia_Polygon"},
+      "transform": [
       {
-        "name": "source_0",
-        "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.topojson_states.json",
-        "format": {"type": "topojson", "feature": "Australia_Polygon"}
-      },
-      {
-        "name": "source_1",
-        "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv",
-        "format": {"type": "csv", "delimiter": ","},
-        "transform": [
-          {
-            "type": "geojson",
-            "fields": ["longitude_deg", "latitude_deg"],
-            "signal": "layer_1_geojson_0"
-          },
-          {
-            "type": "geopoint",
-            "projection": "projection",
-            "fields": ["longitude_deg", "latitude_deg"],
-            "as": ["layer_1_x", "layer_1_y"]
-          }
-        ]
-      }
-    ],
-    "projections": [
-      {
-        "name": "projection",
-        "size": {"signal": "[width, height]"},
-        "fit": {"signal": "[data('source_0'), layer_1_geojson_0]"},
-        "type": "mercator"
-      }
-    ],
-    "marks": [
-      {
-        "name": "layer_0_marks",
-        "type": "shape",
-        "style": ["geoshape"],
-        "from": {"data": "source_0"},
-        "encode": {
-          "update": {
-            "fill": {"value": "lightgray"},
-            "stroke": {"value": "white"},
-            "ariaRoleDescription": {"value": "geoshape"}
-          }
-        },
-        "transform": [{"type": "geoshape", "projection": "projection"}]
-      },
-      {
-        "name": "layer_1_marks",
-        "type": "symbol",
-        "style": ["circle"],
-        "from": {"data": "source_1"},
-        "encode": {
-          "update": {
-            "opacity": {"value": 0.7},
-            "fill": {"value": "steelblue"},
-            "tooltip": {
-              "signal": "{\"Name\": isValid(datum[\"name\"]) ? datum[\"name\"] : \"\"+datum[\"name\"], \"Code\": isValid(datum[\"iata_code\"]) ? datum[\"iata_code\"] : \"\"+datum[\"iata_code\"]}"
-            },
-            "ariaRoleDescription": {"value": "circle"},
-            "description": {
-              "signal": "\"longitude_deg: \" + (format(datum[\"longitude_deg\"], \"\")) + \"; latitude_deg: \" + (format(datum[\"latitude_deg\"], \"\")) + \"; Name: \" + (isValid(datum[\"name\"]) ? datum[\"name\"] : \"\"+datum[\"name\"]) + \"; Code: \" + (isValid(datum[\"iata_code\"]) ? datum[\"iata_code\"] : \"\"+datum[\"iata_code\"])"
-            },
-            "x": {"field": "layer_1_x"},
-            "y": {"field": "layer_1_y"},
-            "size": {"value": 30},
-            "shape": {"value": "circle"}
-          },
-          "hover": {"fill": {"value": "red"}, "size": {"value": 100}}
-        }
+        "type": "geopath",
+        "projection": "projection"
       }
     ]
+    },
+    {
+      "name": "traffic",
+  "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/domestic_flight_data.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+    {
+      "type": "aggregate",
+      "groupby": ["origin"],
+      "fields": ["number_trips"], "ops": ["sum"], "as": ["flights"]
+    }
+  ]
+    },
+    {
+      "name": "airports",
+      "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [
+        {
+      "type": "lookup",
+      "from": "traffic", "key": "origin",
+      "fields": ["iata_code"], "as": ["traffic"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.traffic != null"
+    },
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["longitude_deg", "latitude_deg"]
+        },
+        {
+          "type": "filter",
+          "expr": "datum.x != null && datum.y != null"
+        }
+      ]
+    },
+    {
+  "name": "routes",
+  "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/domestic_flight_data.csv",
+  "format": {"type": "csv", "parse": "auto"},
+  "transform": [
+     {
+      "type": "filter",
+      "expr": "hover && hover.iata_code == datum.origin"
+    },
+    {
+      "type": "lookup",
+      "from": "airports", "key": "iata_code",
+      "fields": ["origin", "destination"], "as": ["source", "target"]
+    },
+    {
+      "type": "filter",
+      "expr": "datum.source && datum.target"
+    },
+    {
+      "type": "linkpath",
+      "shape": "line"
+    }
+  ]
+}
+  ],
+  "scales": [
+    {
+    "name": "size",
+    "type": "linear",
+    "domain": {"data": "traffic", "field": "flights"},
+    "range": [6, 120]
   }
+  ],
+  "projections": [
+    {
+    "name": "projection",
+    "type": "mercator",
+    "scale": 800,
+    "translate": [{"signal": "-1600"}, {"signal": "-120"}]
+  }
+  ],
+  "marks": [
+    {
+    "type": "path",
+    "from": {"data": "states"},
+    "encode": {
+      "enter": {
+        "fill": {"value": "#dedede"},
+        "stroke": {"value": "white"}
+      },
+      "update": {
+        "path": {"field": "path"}
+      }
+    }
+  },
+{
+  "type": "symbol",
+  "from": {"data": "airports"},
+  "encode": {
+    "enter": {
+      "size": {"scale": "size", "field": "traffic.flights"},
+      "fill": {"value": "steelblue"},
+      "fillOpacity": {"value": 0.8},
+      "stroke": {"value": "white"},
+      "strokeWidth": {"value": 1.5}
+    },
+    "update": {
+      "x": {"field": "x"},
+      "y": {"field": "y"}
+    }
+  }
+},
+{
+  "type": "text",
+  "interactive": false,
+  "encode": {
+    "enter": {
+      "x": {"signal": "width", "offset": -5},
+      "y": {"value": 0},
+      "fill": {"value": "black"},
+      "fontSize": {"value": 20},
+      "align": {"value": "right"}
+    },
+    "update": {
+      "text": {"signal": "title"}
+    }
+  }
+},
+{
+  "type": "path",
+  "interactive": false,
+  "from": {"data": "routes"},
+  "encode": {
+    "enter": {
+      "path": {"field": "path"},
+      "stroke": {"value": "grey"},
+      "strokeCap": {"value": "square"},
+      "strokeOpacity": {"value": 0.1}
+    }
+  }
+}
+  ]
+}
