@@ -1,40 +1,41 @@
-name,latitude_deg,longitude_deg,iata_code
-Armidale Airport,-30.52809906,151.6170044,ARM
-Ayers Rock Connellan Airport,-25.1861,130.975998,AYQ
-Alice Springs Airport,-23.80669975,133.9019928,ASP
-Brisbane International Airport,-27.38419914,153.1170044,BNE
-Gold Coast Airport,-28.1644001,153.5050049,OOL
-Cairns International Airport,-16.88579941,145.7550049,CNS
-Hamilton Island Airport,-20.35810089,148.9519959,HTI
-Mount Isa Airport,-20.66390038,139.4889984,ISA
-Sunshine Coast Airport,-26.6033,153.091003,MCY
-Mackay Airport,-21.17169952,149.1799927,MKY
-Ballina Byron Gateway Airport,-28.83390045,153.5619965,QNA
-Proserpine Whitsunday Coast Airport,-20.49500084,148.552002,PPP
-Rockhampton Airport,-23.38190079,150.4750061,ROK
-Broome International Airport,-17.94470024,122.2320023,BME
-Townsville Airport,-19.25250053,146.7649994,TSV
-Bundaberg Airport,-24.90390015,152.3190002,BDB
-Emerald Airport,-23.56749916,148.1790009,EMD
-Geraldton Airport,-28.796101,114.707001,GET
-Gladstone Airport,-23.869699,151.223007,GLT
-Mildura Airport,-34.22919846,142.0859985,MQL
-Launceston Airport,-41.54529953,147.2140045,LST
-Melbourne International Airport,-37.673302,144.843002,MEL
-Moranbah Airport,-22.05780029,148.0769959,MOV
-Newman Airport,-23.4178009,119.8030014,ZNE
-Darwin International Airport,-12.41469955,130.8769989,DRW
-Karratha Airport,-20.71220016,116.7730026,KTA
-Kalgoorlie Boulder Airport,-30.7894001,121.461998,KGI
-Port Lincoln Airport,-34.6053009,135.8800049,PLO
-Port Macquarie Airport,-31.43580055,152.8630066,PQQ
-Port Hedland International Airport,-20.37779999,118.6259995,PHE
-Perth International Airport,-31.94029999,115.9670029,PER
-Canberra International Airport,-35.30690002,149.1950073,CBR
-Coffs Harbour Airport,-30.320601,153.115997,CFS
-Dubbo City Regional Airport,-32.21670151,148.5749969,DBO
-Sydney Kingsford Smith International Airport,-33.94609833,151.177002,SYD
-Tamworth Airport,-31.08390045,150.8470001,TMW
-Wagga Wagga City Airport,-35.16529846,147.4660034,WGA
-Newcastle Airport,-32.79499817,151.8339996,NTL
-Hobart Airport,-42.8364,147.5075,HBA
+name,latitude_deg,longitude_deg,iata_code,state
+Armidale Airport,-30.52809906,151.6170044,ARM,NSW
+Ayers Rock Connellan Airport,-25.1861,130.975998,AYQ,NT
+Alice Springs Airport,-23.80669975,133.9019928,ASP,NT
+Brisbane International Airport,-27.38419914,153.1170044,BNE,QLD
+Gold Coast Airport,-28.1644001,153.5050049,OOL,QLD
+Cairns International Airport,-16.88579941,145.7550049,CNS,QLD
+Hamilton Island Airport,-20.35810089,148.9519959,HTI,QLD
+Mount Isa Airport,-20.66390038,139.4889984,ISA,QLD
+Sunshine Coast Airport,-26.6033,153.091003,MCY,QLD
+Mackay Airport,-21.17169952,149.1799927,MKY,QLD
+Ballina Byron Gateway Airport,-28.83390045,153.5619965,QNA,NSW
+Proserpine Whitsunday Coast Airport,-20.49500084,148.552002,PPP,QLD
+Rockhampton Airport,-23.38190079,150.4750061,ROK,QLD
+Broome International Airport,-17.94470024,122.2320023,BME,NT
+Townsville Airport,-19.25250053,146.7649994,TSV,QLD
+Bundaberg Airport,-24.90390015,152.3190002,BDB,QLD
+Emerald Airport,-23.56749916,148.1790009,EMD,QLD
+Geraldton Airport,-28.796101,114.707001,GET,WA
+Gladstone Airport,-23.869699,151.223007,GLT,QLD
+Mildura Airport,-34.22919846,142.0859985,MQL,VIC
+Launceston Airport,-41.54529953,147.2140045,LST,TAS
+Melbourne International Airport,-37.673302,144.843002,MEL,VIC
+Moranbah Airport,-22.05780029,148.0769959,MOV,QLD
+Newman Airport,-23.4178009,119.8030014,ZNE,WA
+Darwin International Airport,-12.41469955,130.8769989,DRW,NT
+Karratha Airport,-20.71220016,116.7730026,KTA,WA
+Kalgoorlie Boulder Airport,-30.7894001,121.461998,KGI,WA
+Port Lincoln Airport,-34.6053009,135.8800049,PLO,SA
+Port Macquarie Airport,-31.43580055,152.8630066,PQQ,NSW
+Port Hedland International Airport,-20.37779999,118.6259995,PHE,WA
+Perth International Airport,-31.94029999,115.9670029,PER,WA
+Canberra International Airport,-35.30690002,149.1950073,CBR,ACT
+Coffs Harbour Airport,-30.320601,153.115997,CFS,NSW
+Dubbo City Regional Airport,-32.21670151,148.5749969,DBO,NSW
+Sydney Kingsford Smith International Airport,-33.94609833,151.177002,SYD,NSW
+Tamworth Airport,-31.08390045,150.8470001,TMW,NSW
+Wagga Wagga City Airport,-35.16529846,147.4660034,WGA,NSW
+Newcastle Airport,-32.79499817,151.8339996,NTL,NSW
+Hobart Airport,-42.8364,147.5075,HBA,TAS
+Adelaide Airport,-34.9462,138.5332,ADL,SA
