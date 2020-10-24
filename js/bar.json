@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {"url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/domestic_flight_data.csv"},
+    "transform": [{
+      "lookup": "origin",
+      "from": {
+        "data": {"url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/domestic_flight_data.csv"},
+        "key": "origin",
+        "fields": ["passengers"]
+      }
+    }],
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "origin"},
+      "y": {"field": "passengers", "aggregate": "sum"},
+  
+      "tooltip": [
+          {"field": "passengers", "title": "passengers"}
+      ]
+    
+    }
+  }
+  
