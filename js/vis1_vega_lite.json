@@ -6,37 +6,20 @@
       {
         "data": {
           "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.topojson_states.json",
-          "format": {
-            "type": "topojson",
-            "feature": "Australia_Polygon"
-          }
+          "format": {"type": "topojson", "feature": "Australia_Polygon"}
         },
-        "projection": {
-          "type": "mercator"
-        },
-        "mark": {
-          "type": "geoshape",
-          "fill": "lightgray",
-          "stroke": "white"
-        }
+        "projection": {"type": "mercator"},
+        "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
       },
       {
         "data": {
           "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv"
         },
-        "projection": {
-          "type": "mercator"
-        },
+        "projection": {"type": "mercator"},
         "mark": {"type": "circle"},
         "encoding": {
-          "longitude": {
-            "field": "longitude_deg",
-            "type": "quantitative"
-          },
-          "latitude": {
-            "field": "latitude_deg",
-            "type": "quantitative"
-          },
+          "longitude": {"field": "longitude_deg", "type": "quantitative"},
+          "latitude": {"field": "latitude_deg", "type": "quantitative"},
           "size": {"value": 30},
           "color": {"value": "steelblue"},
           "tooltip": [
@@ -44,7 +27,52 @@
             {"field": "iata_code", "title": "Code"}
           ]
         }
-      }    
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/domestic_flight_data.csv"
+        },
+        "transform": [
+          {"filter": {"field": "origin", "equal": "ASP"}},
+          {
+          "lookup": "origin",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv"
+                },
+                "key": "iata_code",
+                "fields": ["latitude_deg", "longitude_deg"]
+              },
+              "as": ["origin_latitude", "origin_longitude"]          
+          },
+          {
+          "lookup": "destination",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/aus_air.csv"
+            },
+            "key": "iata_code",
+            "fields": ["latitude_deg", "longitude_deg"]
+          },
+          "as": ["dest_latitude", "dest_longitude"]
+          }
+        ],
+        "projection": {
+          "type": "mercator"
+        },
+        "mark": "rule",
+        "encoding": {
+          "longitude": {
+            "field": "origin_longitude",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "origin_latitude",
+            "type": "quantitative"
+          },
+          "longitude2": {"field": "dest_longitude"},
+          "latitude2": {"field": "dest_latitude"}
+      }
+      }
     ]
   }
-  
