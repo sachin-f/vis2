@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.topojson_states.json",
+          "format": {
+            "type": "topojson",
+            "feature": "Australia_Polygon"
+          }
+        },
+        "projection": {
+          "type": "mercator"
+        },
+        "mark": {
+          "type": "geoshape",
+          "fill": "lightgray",
+          "stroke": "white"
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/aus_air.csv"
+        },
+        "projection": {
+          "type": "mercator"
+        },
+        "mark": {"type": "circle"},
+        "encoding": {
+          "longitude": {
+            "field": "longitude_deg",
+            "type": "quantitative"
+          },
+          "latitude": {
+            "field": "latitude_deg",
+            "type": "quantitative"
+          },
+          "size": {"value": 30},
+          "color": {"value": "steelblue"},
+          "tooltip": [
+            {"field": "name", "title": "Name"},
+            {"field": "iata_code", "title": "Code"}
+          ]
+        }
+      }    
+    ]
+  }
+  
