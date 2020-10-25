@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": { "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/airport_pre_avg.csv"},
+    "title": "Average (2015 to 2019) Inbound Passengers to Top 10 Australian Airports Pre-COVID",
+    "params": [
+      {"name": "Airport_Selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          "SYDNEY",
+          "MELBOURNE",
+          "BRISBANE",
+          "PERTH",
+          "ADELAIDE",
+          "GOLD COAST",
+          "CAIRNS",
+          "CANBERRA",
+          "HOBART",
+          "DARWIN"
+        ],
+        "labels": [
+          "Sydney Airport",
+          "Melbourne Airport",
+          "Brisbane Airport",
+          "Perth Airport",
+          "Adelaide Airport",
+          "Gold Coast",
+          "Cairns Airport",
+          "Canberra Airport",
+          "Hobart Airport",
+          "Darwin Airport"
+        ],
+        "name": "Airport Selection:"
+      }}
+    ],
+  
+    "transform": [
+      {"filter": "Airport_Selection == null || datum.Airport == Airport_Selection"}
+    ],
+  
+  
+    "mark": "bar",
+  
+    "encoding": {
+      "y": {"field": "Dom_Pax_In",
+            "type": "quantitative",
+            "scale": {"domain": [0,1300000]},
+            "axis": {
+              "tickCount": 10
+            }},
+      "x": {"field": "Month", "type": "ordinal", "sort":[]},
+  
+      "tooltip": [
+        {"field": "Dom_Pax_In", "type": "nominal", "title": "Monthly Average"}
+  
+      ]
+  
+  }
+  }
