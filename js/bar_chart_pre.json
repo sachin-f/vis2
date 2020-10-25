@@ -38,22 +38,35 @@
       {"filter": "Airport_Selection == null || datum.Airport == Airport_Selection"}
     ],
   
+    "layer": [
+      { 
+        "mark": "bar",
   
-    "mark": "bar",
+        "encoding": {
+          "y": {"field": "Dom_Pax_In",
+                "type": "quantitative",
+                "scale": {"domain": [0,1300000]},
+                "axis": {
+                  "tickCount": 10
+                }},
+          "x": {"field": "Month", "type": "ordinal", "sort":[]},
   
-    "encoding": {
-      "y": {"field": "Dom_Pax_In",
-            "type": "quantitative",
-            "scale": {"domain": [0,1300000]},
-            "axis": {
-              "tickCount": 10
-            }},
-      "x": {"field": "Month", "type": "ordinal", "sort":[]},
-  
-      "tooltip": [
-        {"field": "Dom_Pax_In", "type": "nominal", "title": "Monthly Average"}
-  
-      ]
-  
-  }
+          "tooltip": [
+            {"field": "Dom_Pax_In", "type": "nominal", "title": "Monthly Average"}
+          ]
+        }
+      },
+      {
+        "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dx": -20,
+        "fontSize": 11.5
+        },
+        "encoding": {
+          "text": {"field": "Airport"}
+        }
+      }
+    ]
   }
