@@ -1,0 +1,1 @@
+=IF(H13=1, "JAN", IF(H13=2, "FEB", IF(H13=3, "MAR", IF(H13=4, "ARP", IF(H13=5, "MAY", IF(H13=6, "JUN", IF(H13=7, "JUL", IF(H13=8, "AUG", IF(H13=9, "SEP", IF(H13=10, "OCT", IF(H13=11, "NOV", IF(H13=12, "DEC", "FAIL"))))))))))))
