@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 600,
+    "height": 300,
+    "title":"Average (2015 to 2019) Inbound Passengers to Top 20 Australian Airports",
+    "data": { "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/new_data.csv"},
+    "transform": [
+      {"filter": "datum.Airport == 'DARWIN'"},
+      {"calculate": "datum.Year == 2020 ? 'COVID' : 'Pre-COVID'", "as": "Status"}
+    ],
+      "selection": {
+        "highlight": {"type": "single", "empty": "none", "on": "mouseover"},
+        "select": {"type": "multi"}
+    },
+    "mark": {
+    "type": "bar",
+    "stroke": "black",
+    "strokeWidth": 2,
+    "cursor": "pointer"
+    },
+      "encoding": {
+        "y": {
+          "aggregate": "mean", "field": "Int_Pax_In",
+          "title": "Domestic Inbound",
+          "axis": {
+            "tickCount": 5,
+            "grid": false
+          }
+          
+        },
+  
+        "x": {
+          "field": "Month", "sort": []
+        },
+  
+        "color": {
+          "field": "Status",
+          "scale": {"range": ["#e61010", "#101be6"]}
+        },
+  
+        "tooltip": [
+          {"field": "Dom_Pax_In", "title":"Average Passengers Inbound"},
+          {"field": "Year", "title": "Year"},
+          {"field": "Month", "title": "Month"},
+          {"field": "Status", "title": "Status"}
+        ]
+      }
+  }
+  
