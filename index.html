@@ -37,24 +37,24 @@
     
     <div class = "contents">
       <div class="content-1">
-        <h2>Intro - Can my storytelling technique be "Magazine Style"?</h2>
+        <h2>The effect of COVID-19 on the Aviation Industry in Australia</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nibh vel sapien convallis, et pellentesque libero tempor. Nam ac lorem non eros feugiat volutpat in eget orci. Suspendisse molestie, massa vitae consequat semper, lectus lacus lobortis elit, sit amet ornare dolor risus eu sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec tempus risus quis massa aliquam eleifend
+          COVID-19 has adversely affected many industries in Australia. The continuous lockdown of certain states and cities has had a great impact on Australia’s aviation industry. This dashboard gives the reader an opportunity to compare industry figures, before and after the outbreak began in Australia.
         </p>
       </div>
 
       <div class="content-2">
-        <h2>Vis 1</h2>
+        <h2>Passenger Movements Pre & Post COVID - Domestic Flights</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nibh vel sapien convallis, et pellentesque libero tempor. Nam ac lorem non eros feugiat volutpat in eget orci. Suspendisse molestie, massa vitae consequat semper, lectus lacus lobortis elit, sit amet ornare dolor risus eu sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec tempus risus quis massa aliquam eleifend
+          The following vis shows total domestic passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
         </p>
         <div id="vis1"></div>
       </div>
 
       <div class="content-3">
-        <h2>Vis 2</h2>
+        <h2>Passenger Movements Pre & Post COVID - International Flights</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nibh vel sapien convallis, et pellentesque libero tempor. Nam ac lorem non eros feugiat volutpat in eget orci. Suspendisse molestie, massa vitae consequat semper, lectus lacus lobortis elit, sit amet ornare dolor risus eu sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec tempus risus quis massa aliquam eleifend
+          The following vis shows total international passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
         </p>
         <div id="vis2"></div>
       </div>
@@ -91,12 +91,12 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var spec2 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/vis1.json";
+  var spec2 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/vis_2_final.json";
   vegaEmbed('#vis2', spec2, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  var spec3 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/bar.json";
+  var spec3 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/vis1.json";
   vegaEmbed('#vis3', spec3, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
