@@ -1,4 +1,4 @@
-Airport,Month,Dom_Pax_In,Dom_Pax_Out,Int_Pax_In,Int_Pax_Out,Dom_Pax_Total,Int_Pax_Total,Pax_Total,Status
+Airport,Month,Dom_Pax_In,Dom_Pax_Out,Int_Pax_In,Int_Pax_Out,Dom_Pax_Total,Int_Pax_Total,Pax_Total,status
 ADELAIDE,APR,300934.2,305107.4,35225,40223.4,606041.6,75448.4,681490,pre
 ADELAIDE,AUG,293901,290031,42090.2,41771.4,583932,83861.6,667793.6,pre
 ADELAIDE,DEC,308524.2,309123.6,42675.6,52529.6,617647.8,95205.2,712853,pre
