@@ -44,14 +44,11 @@
 }
 
 #vis1, #vis2, #vis3 {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-color: cornflowerblue;
+  background-color: white;
   border: 1px solid black;
+  width: 80%;
+  display:block;
+  margin:auto;
 }
 
 .footer {
@@ -84,13 +81,3 @@ p{
   background: none;
 }
 
-.vega-bindings {
-  background-color: gainsboro;
-  width: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.marks {
-  width: 100%;
-}
