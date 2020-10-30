@@ -1,3 +1,7 @@
+body {
+  background-color: gainsboro;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
@@ -36,16 +40,18 @@
 }
 
 .contents {
-  background-color: gainsboro;
+  background-color: white;
   width: 50%;
   height: auto;
   margin: 0 auto;
   position: relative;
+  padding: 20px;
 }
 
 #vis1, #vis2, #vis3 {
   background-color: white;
   border: 1px solid black;
+  padding: 10px;
   width: 80%;
   display:block;
   margin:auto;
