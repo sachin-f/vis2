@@ -21,7 +21,6 @@
         "GOLD COAST",
         "CAIRNS",
         "CANBERRA",
-        "HOBART",
         "DARWIN"
       ],
       "labels": [
@@ -34,7 +33,6 @@
         "Gold Coast",
         "Cairns Airport",
         "Canberra Airport",
-        "Hobart Airport",
         "Darwin Airport"
       ],
       "name": "Airport Selection:"

@@ -97,7 +97,7 @@
     "name": "size",
     "type": "linear",
     "domain": {"data": "traffic", "field": "flights"},
-    "range": [6, 120]
+    "range": [6, 1200]
   }
   ],
   "projections": [

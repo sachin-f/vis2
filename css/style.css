@@ -65,10 +65,21 @@ h2 {
   margin: 0px;
 }
 
-p {
+p{
   margin: 0px;
+  padding-bottom: 20px;
 }
 
-.content-1, .content-2, .content-3, .content-4, .content-5 {
+.content-2, .content-3, .content-4 {
+  padding-bottom: 20px;
+}
 
+.red {
+  color: red;
+  background: none;
+}
+
+.blue {
+  color: blue;
+  background: none;
 }
