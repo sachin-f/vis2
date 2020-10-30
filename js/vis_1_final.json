@@ -1,72 +1,76 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-    "data": { "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/tester_double.csv"},
-    "transform": [
-      {"filter": "Airport_Selection == null || datum.Airport == Airport_Selection"},
-      {"calculate": "datum.status == 'pre' ? 'Pre-COVID' : 'Post-COVID'", "as": "Status"}
-    ],
-    "width": {"step": 12},
-    "height": 500,
-    "params": [
-    {"name": "Airport_Selection",
-    "bind": {
-      "input": "select",
-      "options": [
-        "All Australian Airports",
-        "SYDNEY",
-        "MELBOURNE",
-        "BRISBANE",
-        "PERTH",
-        "ADELAIDE",
-        "GOLD COAST",
-        "CAIRNS",
-        "CANBERRA",
-        "HOBART",
-        "DARWIN"
-      ],
-      "labels": [
-        "Total",
-        "Sydney Airport",
-        "Melbourne Airport",
-        "Brisbane Airport",
-        "Perth Airport",
-        "Adelaide Airport",
-        "Gold Coast",
-        "Cairns Airport",
-        "Canberra Airport",
-        "Hobart Airport",
-        "Darwin Airport"
-      ],
-      "name": "Airport Selection:"
-    }}
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": { "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/tester_double.csv"},
+  "transform": [
+    {"filter": "Airport_Selection == null || datum.Airport == Airport_Selection"},
+    {"calculate": "datum.status == 'pre' ? 'Pre-COVID' : 'Post-COVID'", "as": "Status"}
   ],
-    "mark": "bar",
-    "encoding": {
-      "column": {
-        "field": "Month",
-        "type": "ordinal",
-        "sort": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]},
-      "y": {
-        "field": "Dom_Pax_Total",
-        "title": "Total Passengers",
-        "type": "quantitative"
-      },
-      "x": {
-        "field": "Status",
-        "axis": {"title": ""},
-        "sort": ["pre", "post"]
-      },
-      "color": {
-        "field": "Status",
-        "scale": {"range": ["#ff0026", "#0015ff"]}
-      },
-      "tooltip": [
-        {"field": "Dom_Pax_Total", "type": "quantitative", "title": "Monthly Average"},
-        {"field": "Status"}
-      ]
+  "width": 30,
+  "height": 600,
+  "params": [
+  {"name": "Airport_Selection",
+  "bind": {
+    "input": "select",
+    "options": [
+      "All Australian Airports",
+      "SYDNEY",
+      "MELBOURNE",
+      "BRISBANE",
+      "PERTH",
+      "ADELAIDE",
+      "GOLD COAST",
+      "CAIRNS",
+      "CANBERRA",
+      "HOBART",
+      "DARWIN"
+    ],
+    "labels": [
+      "Total",
+      "Sydney Airport",
+      "Melbourne Airport",
+      "Brisbane Airport",
+      "Perth Airport",
+      "Adelaide Airport",
+      "Gold Coast",
+      "Cairns Airport",
+      "Canberra Airport",
+      "Hobart Airport",
+      "Darwin Airport"
+    ],
+    "name": "Airport Selection:"
+  }}
+],
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Month",
+      "type": "ordinal",
+      "sort": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+      "title": "|--------------------------------------------------------------------------------Month--------------------------------------------------------------------------------|"},
+    "y": {
+      "field": "Dom_Pax_Total",
+      "title": "Total Passengers",
+      "type": "quantitative"
     },
-      "config": {
-      "view": {"stroke": "transparent"},
-      "axis": {"domainWidth": 1}
-    }
+    "x": {
+      "field": "Status",
+      "axis": {"title": ""},
+      "sort": ["pre", "post"]
+    },
+    "color": {
+      "field": "Status",
+      "scale": {"range": ["#ff0026", "#0015ff"]},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Dom_Pax_Total", "type": "quantitative", "title": "Monthly Average"},
+      {"field": "Status"}
+    ]
+  },
+    "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"domainWidth": 1}
   }
+
+
+}

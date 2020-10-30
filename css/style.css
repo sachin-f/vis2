@@ -83,3 +83,14 @@ p{
   color: blue;
   background: none;
 }
+
+.vega-bindings {
+  background-color: gainsboro;
+  width: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.marks {
+  width: 100%;
+}
