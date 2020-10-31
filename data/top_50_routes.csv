@@ -1,101 +1,101 @@
-﻿airport_1,airport_2,pre
-ADL,MEL,1201450
-ADL,SYD,937850
-ADL,BNE,414950
-ADL,PER,309500
-ADL,OOL,108400
-ALB,SYD,112000
-AYQ,SYD,95600
-QNA,SYD,196300
-BME,PER,143500
-BNE,SYD,2336500
-BNE,MEL,1748700
-BNE,CNS,677550
-BNE,TSV,485150
-BNE,PER,482700
-BNE,MKY,336800
-BNE,NTL,292050
-BNE,CBR,291450
-BNE,ROK,272400
-BNE,DRW,204900
-BNE,GLT,156950
-BNE,PPP,111700
-BNE,HBA,103150
-BNE,EMD,99250
-CBR,MEL,528100
-CBR,SYD,475200
-CFS,SYD,170500
-CNS,SYD,562700
-CNS,MEL,418200
-DBO,SYD,94100
-DRW,SYD,160150
-DRW,MEL,152500
-HBA,MEL,796750
-HBA,SYD,315000
-HTI,SYD,123150
-KGI,PER,117150
-KTA,PER,235250
-LST,MEL,459100
-LST,SYD,146100
-MCY,SYD,276400
-MEL,SYD,4459000
-MEL,PER,1026600
-MEL,ZNE,233550
-MEL,MCY,229850
-MEL,MQL,103300
-OOL,SYD,1349150
-OOL,MEL,992200
-PER,SYD,869750
-PER,PHE,172050
-PQQ,SYD,96000
-ZNE,PER,149000
-MEL,ADL,1201450
-SYD,ADL,937850
-BNE,ADL,414950
-PER,ADL,309500
-OOL,ADL,108400
-SYD,ALB,112000
-SYD,AYQ,95600
-SYD,QNA,196300
-PER,BME,143500
-SYD,BNE,2336500
-MEL,BNE,1748700
-CNS,BNE,677550
-TSV,BNE,485150
-PER,BNE,482700
-MKY,BNE,336800
-NTL,BNE,292050
-CBR,BNE,291450
-ROK,BNE,272400
-DRW,BNE,204900
-GLT,BNE,156950
-PPP,BNE,111700
-HBA,BNE,103150
-EMD,BNE,99250
-MEL,CBR,528100
-SYD,CBR,475200
-SYD,CFS,170500
-SYD,CNS,562700
-MEL,CNS,418200
-SYD,DBO,94100
-SYD,DRW,160150
-MEL,DRW,152500
-MEL,HBA,796750
-SYD,HBA,315000
-SYD,HTI,123150
-PER,KGI,117150
-PER,KTA,235250
-MEL,LST,459100
-SYD,LST,146100
-SYD,MCY,276400
-SYD,MEL,4459000
-PER,MEL,1026600
-ZNE,MEL,233550
-MCY,MEL,229850
-MQL,MEL,103300
-SYD,OOL,1349150
-MEL,OOL,992200
-SYD,PER,869750
-PHE,PER,172050
-SYD,PQQ,96000
-PER,ZNE,149000
+﻿airport_1,airport_2,pre,airport_1_long,airport_2_long,,,,,,,iata_code,name,state
+ADL,MEL,1201450,Adelaide Airport,Melbourne International Airport,,,,,,,ARM,Armidale Airport,NSW
+ADL,SYD,937850,Adelaide Airport,Sydney Kingsford Smith International Airport,,,,,,,AYQ,Ayers Rock Connellan Airport,NT
+ADL,BNE,414950,Adelaide Airport,Brisbane International Airport,,,,,,,ASP,Alice Springs Airport,NT
+ADL,PER,309500,Adelaide Airport,Perth International Airport,,,,,,,BNE,Brisbane International Airport,QLD
+ADL,OOL,108400,Adelaide Airport,Gold Coast Airport,,,,,,,OOL,Gold Coast Airport,QLD
+ALH,SYD,112000,Albany Airport,Sydney Kingsford Smith International Airport,,,,,,,CNS,Cairns International Airport,QLD
+AYQ,SYD,95600,Ayers Rock Connellan Airport,Sydney Kingsford Smith International Airport,,,,,,,HTI,Hamilton Island Airport,QLD
+QNA,SYD,196300,Ballina Byron Gateway Airport,Sydney Kingsford Smith International Airport,,,,,,,ISA,Mount Isa Airport,QLD
+BME,PER,143500,Broome International Airport,Perth International Airport,,,,,,,MCY,Sunshine Coast Airport,QLD
+BNE,SYD,2336500,Brisbane International Airport,Sydney Kingsford Smith International Airport,,,,,,,MKY,Mackay Airport,QLD
+BNE,MEL,1748700,Brisbane International Airport,Melbourne International Airport,,,,,,,QNA,Ballina Byron Gateway Airport,NSW
+BNE,CNS,677550,Brisbane International Airport,Cairns International Airport,,,,,,,PPP,Proserpine Whitsunday Coast Airport,QLD
+BNE,TSV,485150,Brisbane International Airport,Townsville Airport,,,,,,,ROK,Rockhampton Airport,QLD
+BNE,PER,482700,Brisbane International Airport,Perth International Airport,,,,,,,BME,Broome International Airport,NT
+BNE,MKY,336800,Brisbane International Airport,Mackay Airport,,,,,,,TSV,Townsville Airport,QLD
+BNE,NTL,292050,Brisbane International Airport,Newcastle Airport,,,,,,,BDB,Bundaberg Airport,QLD
+BNE,CBR,291450,Brisbane International Airport,Canberra International Airport,,,,,,,EMD,Emerald Airport,QLD
+BNE,ROK,272400,Brisbane International Airport,Rockhampton Airport,,,,,,,GET,Geraldton Airport,WA
+BNE,DRW,204900,Brisbane International Airport,Darwin International Airport,,,,,,,GLT,Gladstone Airport,QLD
+BNE,GLT,156950,Brisbane International Airport,Gladstone Airport,,,,,,,MQL,Mildura Airport,VIC
+BNE,PPP,111700,Brisbane International Airport,Proserpine Whitsunday Coast Airport,,,,,,,LST,Launceston Airport,TAS
+BNE,HBA,103150,Brisbane International Airport,Hobart Airport,,,,,,,MEL,Melbourne International Airport,VIC
+BNE,EMD,99250,Brisbane International Airport,Emerald Airport,,,,,,,MOV,Moranbah Airport,QLD
+CBR,MEL,528100,Canberra International Airport,Melbourne International Airport,,,,,,,ZNE,Newman Airport,WA
+CBR,SYD,475200,Canberra International Airport,Sydney Kingsford Smith International Airport,,,,,,,DRW,Darwin International Airport,NT
+CFS,SYD,170500,Coffs Harbour Airport,Sydney Kingsford Smith International Airport,,,,,,,KTA,Karratha Airport,WA
+CNS,SYD,562700,Cairns International Airport,Sydney Kingsford Smith International Airport,,,,,,,KGI,Kalgoorlie Boulder Airport,WA
+CNS,MEL,418200,Cairns International Airport,Melbourne International Airport,,,,,,,PLO,Port Lincoln Airport,SA
+DBO,SYD,94100,Dubbo City Regional Airport,Sydney Kingsford Smith International Airport,,,,,,,PQQ,Port Macquarie Airport,NSW
+DRW,SYD,160150,Darwin International Airport,Sydney Kingsford Smith International Airport,,,,,,,PHE,Port Hedland International Airport,WA
+DRW,MEL,152500,Darwin International Airport,Melbourne International Airport,,,,,,,PER,Perth International Airport,WA
+HBA,MEL,796750,Hobart Airport,Melbourne International Airport,,,,,,,CBR,Canberra International Airport,ACT
+HBA,SYD,315000,Hobart Airport,Sydney Kingsford Smith International Airport,,,,,,,CFS,Coffs Harbour Airport,NSW
+HTI,SYD,123150,Hamilton Island Airport,Sydney Kingsford Smith International Airport,,,,,,,DBO,Dubbo City Regional Airport,NSW
+KGI,PER,117150,Kalgoorlie Boulder Airport,Perth International Airport,,,,,,,SYD,Sydney Kingsford Smith International Airport,NSW
+KTA,PER,235250,Karratha Airport,Perth International Airport,,,,,,,TMW,Tamworth Airport,NSW
+LST,MEL,459100,Launceston Airport,Melbourne International Airport,,,,,,,WGA,Wagga Wagga City Airport,NSW
+LST,SYD,146100,Launceston Airport,Sydney Kingsford Smith International Airport,,,,,,,NTL,Newcastle Airport,NSW
+MCY,SYD,276400,Sunshine Coast Airport,Sydney Kingsford Smith International Airport,,,,,,,HBA,Hobart Airport,TAS
+MEL,SYD,4459000,Melbourne International Airport,Sydney Kingsford Smith International Airport,,,,,,,ADL,Adelaide Airport,SA
+MEL,PER,1026600,Melbourne International Airport,Perth International Airport,,,,,,,ALH,Albany Airport,WA
+MEL,ZNE,233550,Melbourne International Airport,Newman Airport,,,,,,,,,
+MEL,MCY,229850,Melbourne International Airport,Sunshine Coast Airport,,,,,,,,,
+MEL,MQL,103300,Melbourne International Airport,Mildura Airport,,,,,,,,,
+OOL,SYD,1349150,Gold Coast Airport,Sydney Kingsford Smith International Airport,,,,,,,,,
+OOL,MEL,992200,Gold Coast Airport,Melbourne International Airport,,,,,,,,,
+PER,SYD,869750,Perth International Airport,Sydney Kingsford Smith International Airport,,,,,,,,,
+PER,PHE,172050,Perth International Airport,Port Hedland International Airport,,,,,,,,,
+PQQ,SYD,96000,Port Macquarie Airport,Sydney Kingsford Smith International Airport,,,,,,,,,
+ZNE,PER,149000,Newman Airport,Perth International Airport,,,,,,,,,
+MEL,ADL,1201450,Melbourne International Airport,Adelaide Airport,,,,,,,,,
+SYD,ADL,937850,Sydney Kingsford Smith International Airport,Adelaide Airport,,,,,,,,,
+BNE,ADL,414950,Brisbane International Airport,Adelaide Airport,,,,,,,,,
+PER,ADL,309500,Perth International Airport,Adelaide Airport,,,,,,,,,
+OOL,ADL,108400,Gold Coast Airport,Adelaide Airport,,,,,,,,,
+SYD,ALH,112000,Sydney Kingsford Smith International Airport,Albany Airport,,,,,,,,,
+SYD,AYQ,95600,Sydney Kingsford Smith International Airport,Ayers Rock Connellan Airport,,,,,,,,,
+SYD,QNA,196300,Sydney Kingsford Smith International Airport,Ballina Byron Gateway Airport,,,,,,,,,
+PER,BME,143500,Perth International Airport,Broome International Airport,,,,,,,,,
+SYD,BNE,2336500,Sydney Kingsford Smith International Airport,Brisbane International Airport,,,,,,,,,
+MEL,BNE,1748700,Melbourne International Airport,Brisbane International Airport,,,,,,,,,
+CNS,BNE,677550,Cairns International Airport,Brisbane International Airport,,,,,,,,,
+TSV,BNE,485150,Townsville Airport,Brisbane International Airport,,,,,,,,,
+PER,BNE,482700,Perth International Airport,Brisbane International Airport,,,,,,,,,
+MKY,BNE,336800,Mackay Airport,Brisbane International Airport,,,,,,,,,
+NTL,BNE,292050,Newcastle Airport,Brisbane International Airport,,,,,,,,,
+CBR,BNE,291450,Canberra International Airport,Brisbane International Airport,,,,,,,,,
+ROK,BNE,272400,Rockhampton Airport,Brisbane International Airport,,,,,,,,,
+DRW,BNE,204900,Darwin International Airport,Brisbane International Airport,,,,,,,,,
+GLT,BNE,156950,Gladstone Airport,Brisbane International Airport,,,,,,,,,
+PPP,BNE,111700,Proserpine Whitsunday Coast Airport,Brisbane International Airport,,,,,,,,,
+HBA,BNE,103150,Hobart Airport,Brisbane International Airport,,,,,,,,,
+EMD,BNE,99250,Emerald Airport,Brisbane International Airport,,,,,,,,,
+MEL,CBR,528100,Melbourne International Airport,Canberra International Airport,,,,,,,,,
+SYD,CBR,475200,Sydney Kingsford Smith International Airport,Canberra International Airport,,,,,,,,,
+SYD,CFS,170500,Sydney Kingsford Smith International Airport,Coffs Harbour Airport,,,,,,,,,
+SYD,CNS,562700,Sydney Kingsford Smith International Airport,Cairns International Airport,,,,,,,,,
+MEL,CNS,418200,Melbourne International Airport,Cairns International Airport,,,,,,,,,
+SYD,DBO,94100,Sydney Kingsford Smith International Airport,Dubbo City Regional Airport,,,,,,,,,
+SYD,DRW,160150,Sydney Kingsford Smith International Airport,Darwin International Airport,,,,,,,,,
+MEL,DRW,152500,Melbourne International Airport,Darwin International Airport,,,,,,,,,
+MEL,HBA,796750,Melbourne International Airport,Hobart Airport,,,,,,,,,
+SYD,HBA,315000,Sydney Kingsford Smith International Airport,Hobart Airport,,,,,,,,,
+SYD,HTI,123150,Sydney Kingsford Smith International Airport,Hamilton Island Airport,,,,,,,,,
+PER,KGI,117150,Perth International Airport,Kalgoorlie Boulder Airport,,,,,,,,,
+PER,KTA,235250,Perth International Airport,Karratha Airport,,,,,,,,,
+MEL,LST,459100,Melbourne International Airport,Launceston Airport,,,,,,,,,
+SYD,LST,146100,Sydney Kingsford Smith International Airport,Launceston Airport,,,,,,,,,
+SYD,MCY,276400,Sydney Kingsford Smith International Airport,Sunshine Coast Airport,,,,,,,,,
+SYD,MEL,4459000,Sydney Kingsford Smith International Airport,Melbourne International Airport,,,,,,,,,
+PER,MEL,1026600,Perth International Airport,Melbourne International Airport,,,,,,,,,
+ZNE,MEL,233550,Newman Airport,Melbourne International Airport,,,,,,,,,
+MCY,MEL,229850,Sunshine Coast Airport,Melbourne International Airport,,,,,,,,,
+MQL,MEL,103300,Mildura Airport,Melbourne International Airport,,,,,,,,,
+SYD,OOL,1349150,Sydney Kingsford Smith International Airport,Gold Coast Airport,,,,,,,,,
+MEL,OOL,992200,Melbourne International Airport,Gold Coast Airport,,,,,,,,,
+SYD,PER,869750,Sydney Kingsford Smith International Airport,Perth International Airport,,,,,,,,,
+PHE,PER,172050,Port Hedland International Airport,Perth International Airport,,,,,,,,,
+SYD,PQQ,96000,Sydney Kingsford Smith International Airport,Port Macquarie Airport,,,,,,,,,
+PER,ZNE,149000,Perth International Airport,Newman Airport,,,,,,,,,
