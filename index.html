@@ -68,6 +68,14 @@
       </div>
 
       <div class="content-5">
+        <h2>Australian Airports - Most Popular Routes</h2>
+        <p>
+          The following vis is an heatmap which shows the top 32 domestic Australian flight routes. These values are <mark class="blue">Pre-COVID</mark>. Brighter the color, the more popular the route. Please hover over the elements for more information!
+        </p>
+        <div id="vis3"></div>
+      </div>
+
+      <div class="content-5">
         <h2>Summary</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nibh vel sapien convallis, et pellentesque libero tempor. Nam ac lorem non eros feugiat volutpat in eget orci. Suspendisse molestie, massa vitae consequat semper, lectus lacus lobortis elit, sit amet ornare dolor risus eu sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec tempus risus quis massa aliquam eleifend
@@ -98,6 +106,11 @@
 
   var spec3 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/vis_3_final.json";
   vegaEmbed('#vis3', spec3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec4 = "https://raw.githubusercontent.com/sachin-f/vis2/master/js/vis_4_final.json";
+  vegaEmbed('#vis4', spec4, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

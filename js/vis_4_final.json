@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/sachin-f/vis2/master/data/top_50_routes.csv"
+    },
+    "config": {
+        "view": {
+            "strokeWidth": 0,
+            "step": 13
+        },
+        "axis": {
+            "domain": false
+        }
+    },
+    "mark": "rect",
+    "encoding": {
+        "x": {
+            "field": "airport_1",
+            "type": "nominal",
+            "title": "Airport 1",
+            "axis": {
+            }
+        },
+        "y": {
+            "field": "airport_2",
+            "type": "nominal",
+            "title": "Airport 2"
+        },
+        "color": {
+            "field": "pre",
+            "aggregate": "sum",
+            "scale": {"scheme": "viridis"},
+            "type": "quantitative",
+            "legend": {
+                "title": "Yearly Passengers"
+            }
+        },
+        "tooltip": [
+        {"field": "airport_1_long", "title": "Airport 1"},
+        {"field": "airport_2_long", "title": "Airport 2"},
+        {"field": "pre", "title": "Yearly Passengers"}
+        ]
+  }
+    }
+  
