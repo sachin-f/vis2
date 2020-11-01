@@ -6,7 +6,7 @@
     {"calculate": "datum.status == 'pre' ? 'Pre-COVID' : 'Post-COVID'", "as": "Status"}
   ],
   "width": 20,
-  "height": 600,
+  "height": 450,
   "params": [
   {"name": "Airport_Selection",
   "bind": {
