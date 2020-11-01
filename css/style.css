@@ -19,14 +19,6 @@ img {
   position: relative;
 }
 
-.nav-element {
-  background: linear-gradient(0deg, rgb(201, 200, 212) 0%, rgb(39, 39, 46) 50%);
-  font-size: large;
-  color: white;
-  text-decoration: none;
-  padding: 5px;
-}
-
 .line {
   width: 100%;
   height: 10px;
@@ -42,7 +34,8 @@ img {
   transform: translate(-50%, -50%);
 }
 .subtitle {
-  font-size: x-small;
+  font-size: medium;
+  font-style: italic;
   position: absolute;
   padding: 0px;
   top: 80%;
@@ -52,11 +45,13 @@ img {
 
 .contents {
   background-color: white;
-  width: 50%;
+  width: 40%;
   height: auto;
   margin: 0 auto;
   position: relative;
-  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
 }
 
 #vis1, #vis2, #vis3, #vis4 {
@@ -74,7 +69,7 @@ img {
   line-height: 1.15em;
 }
 
-h2 {
+h2, h3 {
   padding: 0px;
   margin: 0px;
 }
@@ -98,7 +93,6 @@ p{
   background: none;
 }
 
-#vis3, #vis4 {
-  display: flex;
-  justify-content: center;
+p, h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif;
 }

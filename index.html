@@ -8,6 +8,9 @@
     <!--hmm-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Custom Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet"> 
 
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
@@ -26,7 +29,7 @@
     <div class = "header-container">​
       <div class="header">
         <img src="assets/plane.jpg">
-        <h1 class = "title">Flights!</h1>
+        <h1 class = "title">The Australian Aviation Industry | Effects of COVID-19</h1>
         <h2 class = "subtitle">a vis by Sachin Fernando</h2>
       </div>
     </div>  
@@ -35,30 +38,14 @@
     
     <div class = "contents">
       <div class="content-1">
-        <h2>The Effect of COVID-19 on the Aviation Industry in Australia</h2>
+        <h2>The Big Picture</h2>
         <p>
-          COVID-19 has adversely affected many industries in Australia. The continuous lockdown of certain states and cities has had a great impact on Australia’s aviation industry. This dashboard gives the reader an opportunity to compare industry figures, before and after the outbreak began in Australia.
+          The domestic airline industry has thrived in Australia due to passengers desire to quickly traverse between business hubs. Australia is home to the 2nd busiest domestic route in the world: Melbourne-Sydney, which sees over 150 daily flights, which tallies up to about 54,000 flights yearly. This section walks through the <mark class="blue">Pre-COVID</mark>  landscape.
         </p>
-      </div>
-
-      <div class="content-2">
-        <h2>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - Domestic Flights</h2>
-        <p>
-          The following vis shows total domestic passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
-        </p>
-        <div id="vis1"></div>
-      </div>
-
-      <div class="content-3">
-        <h2>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - International Flights</h2>
-        <p>
-          The following vis shows total international passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
-        </p>
-        <div id="vis2"></div>
       </div>
 
       <div class="content-4">
-        <h2>Australian Airports - Typical Traffic</h2>
+        <h3>Australian Airports - Typical Traffic</h3>
         <p>
           The following vis is an interactive network diagram which shows major domestic routes. The area of the airport marker is proportional to the total traffic it sees in a typical year (Pre-COVID). Please hover over the <mark class="blue">airport markers</mark> for more information!
         </p>
@@ -66,19 +53,39 @@
       </div>
 
       <div class="content-5">
-        <h2>Australian Airports - Most Popular Routes</h2>
+        <h3>Australian Airports - Most Popular Routes</h3>
         <p>
           The following vis is an heatmap which shows the top 32 domestic Australian flight routes. These values are <mark class="blue">Pre-COVID</mark>. Brighter the color, the more popular the route. Please hover over the elements for more information!
         </p>
         <div id="vis4"></div>
       </div>
 
-      <div class="content-5">
-        <h2>Summary</h2>
+      <div class="content-7">
+        <h2>Effects of COVID-19 on the Industry</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit nibh vel sapien convallis, et pellentesque libero tempor. Nam ac lorem non eros feugiat volutpat in eget orci. Suspendisse molestie, massa vitae consequat semper, lectus lacus lobortis elit, sit amet ornare dolor risus eu sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec tempus risus quis massa aliquam eleifend
+          COVID-19 has adversely affected many industries in Australia. The continuous lockdown of certain states and cities has had a great impact on Australia’s aviation industry. This following visualisations give the reader an opportunity to compare industry figures, before and after the outbreak began in Australia.
         </p>
       </div>
+
+      <div class="content-2">
+        <h3>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - Domestic Flights</h3>
+        <p>
+          The following vis shows total domestic passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
+        </p>
+        <div id="vis1"></div>
+      </div>
+
+      <div class="content-3">
+        <h3>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - International Flights</h3>
+        <p>
+          The following vis shows total international passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
+        </p>
+        <div id="vis2"></div>
+      </div>
+
+
+
+
      </div>
      
      <div class="line"></div>

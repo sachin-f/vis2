@@ -5,7 +5,7 @@
     {"filter": "Airport_Selection == null || datum.Airport == Airport_Selection"},
     {"calculate": "datum.status == 'pre' ? 'Pre-COVID' : 'Post-COVID'", "as": "Status"}
   ],
-  "width": 30,
+  "width": 20,
   "height": 600,
   "params": [
   {"name": "Airport_Selection",
@@ -46,7 +46,7 @@
       "field": "Month",
       "type": "ordinal",
       "sort": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
-      "title": "|--------------------------------------------------------------------------------Month--------------------------------------------------------------------------------|"},
+      "title": "Month"},
     "y": {
       "field": "Dom_Pax_Total",
       "title": "Total Passengers",
