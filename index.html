@@ -2,20 +2,19 @@
 <html lang="en">
 
 <head>
-<title>Flights! | Dashboard</title>
+<title>Flights!</title>
 
     <!--PureCSS-->
-    <!--hmm-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!--Custom Fonts-->
+    <!--Custom Fonts - from Google Fonts [Work Sans - Regular]-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet"> 
 
-    <!--Custom CSS-->
+    <!--My Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
 
-    <!--Import Vega/Vega-Lite-->
+    <!--Import Vega/Vega-Lite Libraries-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -40,12 +39,12 @@
       <div class="content-1">
         <h2>The Big Picture</h2>
         <p>
-          The domestic airline industry has thrived in Australia due to passengers desire to quickly traverse between business hubs. Australia is home to the 2nd busiest domestic route in the world: Melbourne-Sydney, which sees over 150 daily flights, which tallies up to about 54,000 flights yearly. This section walks through the <mark class="blue">Pre-COVID</mark>  landscape.
+          The domestic airline industry has thrived in Australia due to passengers desire to quickly traverse between business hubs. Australia is home to the 2nd busiest domestic route in the world: Melbourne-Sydney, which sees over 150 daily flights, which tallies up to about 54,000 flights yearly. This section walks through the <mark class="blue">Pre-COVID</mark> landscape.
         </p>
       </div>
 
       <div class="content-4">
-        <h3>Australian Airports - Typical Traffic</h3>
+        <h4>Australian Airports - Typical Traffic</h4>
         <p>
           The following vis is an interactive network diagram which shows major domestic routes. The area of the airport marker is proportional to the total traffic it sees in a typical year (Pre-COVID). Please hover over the <mark class="blue">airport markers</mark> for more information!
         </p>
@@ -53,7 +52,7 @@
       </div>
 
       <div class="content-5">
-        <h3>Australian Airports - Most Popular Routes</h3>
+        <h4>Australian Airports - Most Popular Routes</h4>
         <p>
           The following vis is an heatmap which shows the top 32 domestic Australian flight routes. These values are <mark class="blue">Pre-COVID</mark>. Brighter the color, the more popular the route. Please hover over the elements for more information!
         </p>
@@ -68,23 +67,31 @@
       </div>
 
       <div class="content-2">
-        <h3>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - Domestic Flights</h3>
+        <h4>Domestic - Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID</h4>
         <p>
-          The following vis shows total domestic passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
+          The following vis shows total domestic passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for <mark class="blue">Pre-COVID</mark> times. <b>Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.</b>
         </p>
         <div id="vis1"></div>
       </div>
 
       <div class="content-3">
-        <h3>Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID - International Flights</h3>
+        <h4>International Passenger Movements <mark class="blue">Pre</mark> & <mark class="red">Post</mark> COVID</h4>
         <p>
-          The following vis shows total international passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for 'Pre-COVID' times. Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.
+          The following vis shows total international passengers passing through an airport. Data from years 2015 to 2019 was averaged to find indicative values for <mark class="blue">Pre-COVID</mark> times. <b>Post-COVID figures (for 2020) are only avaliable up to August, which explains the missing values.</b>
         </p>
         <div id="vis2"></div>
       </div>
 
+      <div class="content-3">
+        <h4>Summary</h4>
+        <p>
+          An interesting thing to note is that during January 2020, Australia saw a 10% increase in International Passengers, and a 5% increase in Domestic Passengers. This means that demand rose when talks of a potential lockdown began. Since then flight activity has dropped to unprecedented lows.
+        </p>
 
-
+        <p>
+          Hello Kane :) Thanks for reading. I hope you enjoyed my vis!
+        </p>
+      </div>
 
      </div>
      
@@ -122,9 +129,3 @@
 
 </body>
 </html>
-
-<!--
-https://raw.githubusercontent.com/sachin-f/vis2/master/js/aus.geo.topojson.json
-
--->
-

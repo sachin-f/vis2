@@ -175,7 +175,7 @@
   "encode": {
     "enter": {
       "size": {"scale": "size", "field": "traffic.pre", "type": "quantitative"},
-      "fill": {"value": "steelblue"},
+      "fill": {"value": "Blue"},
       "fillOpacity": {"value": 1},
       "stroke": {"value": "white"},
       "strokeWidth": {"value": 1.5},
