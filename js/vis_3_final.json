@@ -194,7 +194,7 @@
   "interactive": false,
   "encode": {
     "enter": {
-      "x": {"signal": "width", "offset": -5},
+      "x": {"signal": "width", "offset": 120},
       "y": {"value": 0},
       "fill": {"value": "black"},
       "fontSize": {"value": 20},
